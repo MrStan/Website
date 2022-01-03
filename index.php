@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Connected</title>
   <link rel="stylesheet" href="css/index.css" type="text/css">
+  <link rel="stylesheet" media="screen and (max-width: 1050px)" href="css/widerscreen.css">
+  <link rel="stylesheet" media="screen and (max-width: 650px)" href="css/smallerscreen.css">
 </head>
 <body>
 <div id="sources">
