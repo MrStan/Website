@@ -1,1 +1,1 @@
-I will edit this readme :)
+Hello! This is my first website connected with database via php :)
