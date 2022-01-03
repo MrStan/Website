@@ -61,7 +61,7 @@ else {
   $sql = "INSERT INTO website (FirstName, LastName, Adress, PhoneNumber, Password, FileName) VALUES ('$firstname', '$lastname', '$Adress', '$Phone', '$Password', '$Img');";
   if ($con->query($sql) === TRUE) {
       echo "New record created successfully! <br>";
-      echo '<a href="form.html" id="goBack">Go!</a>';
+      echo '<a href="index.html" id="goBack">Go!</a>';
     } else {
       echo "Error: ".$sql.'<br>'.$con->error;
     }
