@@ -38,6 +38,7 @@ require('connect.php');
 if($imageFileType != "img" && $imageFileType != "jpeg" && $imageFileType != "jpg" && $imageFileType != "gif" && $imageFileType != "png") {
   echo 'Sorry but is accepted only img / jpg / jpeg / gif... <br>
   Please go back to log in page and load one accepted type of image. :) <br>';
+  echo '<a href="index.html" id="goBack">Go back!</a>';
   die();
 } 
 else {
@@ -54,20 +55,21 @@ else {
   if(isset($_POST["submit"])) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
       echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded. <br>";
-    } else {
-      echo "Sorry, there was an error uploading your file. <br>"; 
-    }
-  };
 
     // database insert sql
   $sql = "INSERT INTO website (FirstName, LastName, Adress, PhoneNumber, Password, FileName) VALUES ('$firstname', '$lastname', '$Adress', '$Phone', '$Password', '$Img');";
   if ($con->query($sql) === TRUE) {
       echo "New record created successfully! <br>";
-      echo '<a href="index.html" id="goBack">Go!</a>';
-    } else {
+      echo '<a href="about.php" id="goAbout">Go about!</a>';
+  } else {
       echo "Error: ".$sql.'<br>'.$con->error;
     }
   $con->close();
+
+    } else {
+      die();
+    }
+  };
 }
 ?>
 </div>
