@@ -1,14 +1,13 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(https://hdwallpaperim.com/wp-content/uploads/2017/08/24/108443-black-white-Eiffel_Tower-Paris-France.jpg);
+    background-image: url(../images/bigdisplay.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
     color: #ccc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 a {
     text-decoration: none;
 }
