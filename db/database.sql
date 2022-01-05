@@ -1,4 +1,4 @@
-CREATE DATABASE inbex;
+CREATE DATABASE index;
 CREATE TABLE website (
     ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     FirstName varchar(255),
